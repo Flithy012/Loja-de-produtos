@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja DAtech</title>
+    <style>
+        *{
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 2vh;
+        }
+        header{
+           
+            background: white;
+            font-weight: 900;
+            font-family: courier;
+            font-size: 30px;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 4vh;
+            padding: 0 2vh;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            box-shadow: 10px 10px 15px grey;
+             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+
+
+
+        }
+        body{
+            background: #f5f5f7;
+             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+             font-weight: 500;
+             overflow-x: hidden;
+        }
+      .logo {
+            font-size: 25px;
+            font-weight: 600;
+            margin-right: auto;
+            background: linear-gradient(90deg, #007aff, #5ac8fa, #007aff);
+            background-size: 400% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            position: relative;
+            top: 8px;
+        }
+
+
+        .busc {
+            position: relative;
+            left: 87vh;
+            top: 10px;
+            cursor: pointer;
+        }
+
+
+
+
+        .banner{
+            background: url('https://www.clevercel.co/cdn/shop/files/BANNERS_MARZO_MARCA_2_DESK.png?v=1709283582&width=3000') no-repeat center center;
+            background-size: cover;
+            height: 40vh;
+            width: 100%;
+            border-radius: 50px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            gap: 3vh;
+            padding: 10px;
+            justify-content: flex-start;
+        }
+        .product-list:hover{
+            overflow: scroll;
+        }
+        header .cat:hover{
+            color: blue;
+        }
+        .product-item{
+            padding: 20vh;
+            text-align: center;
+            width: auto;
+            height: 40vh;
+            border-radius: 40px;
+            padding: 3vh;
+            flex-shrink: 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .product-item img{
+            border-radius: 30px;
+            width: 30vh;
+            height: 30vh;
+           
+        }
+        .product-item:hover img{
+            transform: scale(1.10);
+            transition: transform 2.5s ease;
+        }
+        .product-item:not(:hover) img{
+            transform: scale(1);
+            transition: 1.5s ease;
+        }
+
+
+        .product-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03);
+              transition: 1.5s ease;
+        }
+        .product-item:not(:hover) {
+            box-shadow: none;
+            transform: scale(1);
+              transition: 1s ease;
+        }
+        .desta {
+            font-family: monospace;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: left;
+            padding: 1vh;
+            margin: 1vh;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            padding: 3vh;
+            border-radius: 20px;
+            box-shadow: inset 4px 2px 2px rgb(224, 224, 224), 4px 2px 2px rgb(224, 224, 224);
+        }
+
+
+        .comm{
+            font-size: 50px;
+            font-weight: 900;
+            padding: 3vh;
+            background: white;
+            box-shadow: inset 4px 2px 2px rgb(224, 224, 224), 4px 2px 2px rgb(224, 224, 224);
+            border-radius: 20px;
+            margin: 1vh;
+            text-transform: uppercase;
+        }
+        h1 p{
+            color: grey;
+            text-wrap: nowrap;
+            overflow: hidden;
+        }
+        h1:hover p{
+            animation-name: digt;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes digt {
+            0%{
+                width: 1ch;
+            }
+            3%{
+                width: 2ch;
+            }
+            6%{
+                width: 3ch;
+            }
+            9%{
+                width: 4ch;
+            }
+            12%{
+                width: 5ch;
+            }
+            15%{
+                width: 6ch;
+            }
+            18%{
+                width: 7ch;
+            }
+            21%{
+                width: 8ch;
+            }
+            24%{
+                width: 9ch;
+            }
+            27%{
+                width: 10ch;
+            }
+            30%{
+                width: 11ch;
+            }
+            33%{
+                width: 12ch;
+            }
+            36%{
+                width: 13ch;
+            }
+            39%{
+                width: 14ch;
+            }
+            42%{
+                width: 15ch;
+            }
+            45%{
+                width: 16ch;
+            }
+            48%{
+                width: 17ch;
+            }
+            51%{
+                width: 18ch;
+            }
+            54%{
+                width: 19ch;
+            }
+            57%{
+                width: 20ch;
+            }
+            60%{
+                width: 21ch;
+            }
+            63%{
+                width: 22ch;
+            }
+            66%{
+                width: 23ch;
+            }
+            69%{
+                width: 24ch;
+            }
+            72%{
+                width: 25ch;
+            }
+            75%{
+                width: 26ch;
+            }
+            78%{
+                width: 27ch;
+            }
+            81%{
+                width: 28ch;
+            }
+            84%{
+                width: 29ch;
+            }
+            87%{
+                width: 30ch;
+            }
+            90%{
+                width: 31ch;
+            }
+            93%{
+                width: 32ch;
+            }
+            96%{
+                width: 33ch;
+            }
+            100%{
+                width: 34ch;
+            }
+        }
+       
+       
+        footer{
+      position: relative;
+      bottom: -50px;
+      background: white;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      padding: 20px;
+     
+    }
+    footer p{
+        background: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 153, 255), rgb(0, 217, 255));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <p class="logo">DAtech</p>
+        <div class="busc">
+        <img src="https://i1.wp.com/cdn-icons-png.flaticon.com/512/126/126510.png" width="30" height="30" class="busc">
+        </div>
+    </header>
+    <main>
+    <section class="banner">
+    </section>
+        <h1 class="desta">Produtos em destaque. <p> Veja nossos principais produtos!</p></h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16-pro-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXUHpnd0VsRWFiaWRaRHRaUXBvNTNkalNab1lJcUZwSFVRK1htYlNmZUtPTG54cStVNU5BQmhzbkxYRGxDWUc3R1lXVzNzT2dSajRTd2tFaEdoYUp2VnY1WVJVT21DTzBZRFlBTTZySFFMbHY"  class="Produto n1">
+                <p>Iphone 16 pro max</p>
+                <p>R$ 7.199,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXRFJ0OFRiWngrNGllYTMvQ1dlWDBQZjZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWEdJV2RaUklyUnViT0c4OGJXRWhUTnArYWpGdS9XeFgvbS9ITnNYOEhYaG4"  class="Produto n2">
+                <p>Mac Book Air</p>
+                <p>R$ 11.599,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyOWVOMytmanI1M0ZTQWR1RjlDMWJpNXFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbk15N0N0R0lhUGhlMG1Tdmc3RjZVQ09NTUhYNlZ6OGxKNWpBMHlTSTlldko" class="Produto n3">
+                <p>Ipad Air</p>
+                <p>R$ 7.999,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vbGtrQjBqdmhJbWlLcCtlQTMwc01SdjkvamYzRzRvcFlnajNacmhEOC9BeDE1UUxLT2t0cW42N3FvQzVqaGhrVVlSek45NHpYUG91NnZ3YmlDQlpUYnArYWpGdS9XeFgvbS9ITnNYOEhYaG4"  class="Produto n4">
+                <p>Apple Wacth Series 10</p>
+                <p>R$ 2.099,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16e-202502_GEO_BR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXSzRWdVVUSklyLzFIUnk0cUZLSXhCVU9wTTlBdnBxNmNCbVU1VDZFQnF3MVJSeXJaL3JqNm9jc2psYU5Qelh0TnNldk5NTXRkeFF2V3BGOGlmVi9OaUMyZ1ovZzJoakwyZ08xaFc1aW95L1U"  class="Produto n5">
+                <p>Iphone 16e</p>
+                <p>R$ 4.400,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-202503_GEO_BR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXTGNNTGhvRjhHWGJNYlg4YkNyZ201bHFTRjNxbmh1UnU2R29ibGdpZUFXcy85S3R4M0M3WGhIQVNOK3lBdUI5K1ZoNkpud0xPY3hVQWdUaXlrTFdBV2IyYitOSzBMaHZMeUJwbDd1TFN1dGo"  class="Produto n6">
+                <p>Ipad</p>
+                <p>R$ 8.399,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-mac-studio-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyMFozSSthUWxLelAxTitDZ3M4Tk5nbm45S05qekNUdVUwMVFyK1pKaERUd3NtS0NkZnlUKzBRdlpRai9zMDR0cTA2K1VNZGNlb0hPLzMyemJjWVkyQ0JMQzBoZ1NYMmRGQ2VZWXI2YVMzc2I" class="Profuto n7">
+                <p>Mac Studio</p>
+                <p>R$ 22.199,99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-watch-ultra-202409_GEO_BR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vbHdYN09OOVhGMkJZZWFPTlJDYlZ0V3dHa0s2MVM1MjA3Rk1JVmM0V09XWXAwckMxbExydC8yeDhtUjlFVHdKVnRSR0liZklwWjJ2eGlOd1dxRHFuOXBXUlFlSndMQ3NSejVmRG8yQ3JOWWk"  class="Produto n8">
+                <p>Apple Watch Ultra 2</p>
+                <p>R$ 3.099,99</p>
+            </div>
+           
+        </div>
+    <footer>
+  <p>Copyright DAtech®</p>
+</footer>
+    </main>
+    <script type="text/javascript">
+        const product1 = document.querySelector(".n1");
+
+
+            product1.addEventListener('click', abrir);
+            function abrir(){
+            window.location.href = "item.html";
+            }
+            const product2 = document.querySelector(".n2");
+
+
+            product2.addEventListener('click', abrir2);
+            function abrir2(){
+            window.location.href = "item2.html";
+            }
+            const product3 = document.querySelector(".n3");
+
+
+            product3.addEventListener('click', abrir3);
+            function abrir3(){
+            window.location.href = "item3.html";
+            }
+            const product4 = document.querySelector(".n4");
+
+
+            product4.addEventListener('click', abrir4);
+            function abrir4(){
+            window.location.href = "item4.html";
+            }
+            const product5 = document.querySelector(".n5");
+
+
+            product5.addEventListener('click', abrir5);
+            function abrir5(){
+            window.location.href = "item5.html";
+            }
+            const product6 = document.querySelector(".n6");
+
+
+            product6.addEventListener('click', abrir6);
+            function abrir6(){
+            window.location.href = "item6.html";
+            }
+            const product7 = document.querySelector(".n7");
+
+
+            product7.addEventListener('click', abrir7);
+            function abrir7(){
+            window.location.href = "item7.html";
+            }
+            const product8 = document.querySelector(".n8");
+
+
+            product8.addEventListener('click', abrir8);
+            function abrir8(){
+            window.location.href = "item8.html";
+            }
+    </script>
+</body>
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produto</title>
+    <style>
+        *{
+            margin: 0;
+            width: auto;
+        }
+        body{
+            background: rgb(240, 240, 240);
+        }
+        .iphone img{
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+        }
+        .iphone{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .iphone:hover img{
+            scale: 1.01;
+            box-shadow: 1px 1px 10px black;
+            transition: 0.5s ease;
+        }
+        .iphone:not(:hover) img{
+            scale: 1;
+            transition: 0.5s ease;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 100px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .info p{
+            max-width: 500px;
+            word-spacing: 5px;
+            text-align: justify;
+        }
+        .tit {
+            font-size: 35px;
+            color: grey;
+            font-weight: 900;
+            font-family: monospace;
+        }
+        .textinfo{
+            font-size: 20px;
+        }
+        .iphone p{
+            font-size: 30px;
+            font-family: monospace;
+            font-weight: 900;
+        }
+        .arm button , .ram button{
+            border-radius: 10px;
+            padding: 10px;
+            background: rgb(239, 251, 255);
+            border: 2px solid rgb(48, 45, 255);
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            width: 100px;
+            height: 50px;
+        }
+        @keyframes aper {
+            from{
+                background: rgb(239, 251, 255);
+            }
+            to{
+                background: rgb(103, 156, 255);
+            }
+        }
+        .arm p , .ram p{
+            font-size: 25px;
+            font-family: fantasy;
+            font-weight: 90;
+        }
+        button:hover{
+            box-shadow: 1px 1px 5px rgb(118, 200, 255);
+            scale: 1.01;
+            transition: 0.5s ease;
+        }
+        form p{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        button[type = "submit"]{
+            border-radius: 10px;
+            height: 50px;
+            font-size: 20px;
+            border: double rgb(0, 140, 255) 3px;
+            background: white;
+            color: rgb(0, 0, 0);
+            margin-top: 50px;
+        }
+        header{
+            background: white;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            font-family: courier;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header p{
+            background: linear-gradient(to right, rgb(0, 102, 255), rgb(49, 172, 255));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: 5px;
+        }
+        footer{
+      position: relative;
+      bottom: -110px;
+      background: white;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+     }
+     footer p{
+      background: linear-gradient(rgb(0, 89, 255), rgb(66, 170, 255));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+     }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>DAtech</p>
+    </header>
+    <main>
+        <section class="iphone">
+            <p>Apple watch Series 10</p>
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM23ref_FV99_VW_34FR+watch-case-46-titanium-slate-cell-s10_VW_34FR+watch-face-46-titanium-slate-s10_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=TnVrdDZWRlZzTURKbHFqOGh0dGpVRW5TeWJ6QW43NUFnQ2V4cmRFc1VnWTc4blplVGNpSEZpNjZUNjVaN2NmQ0hYdElIVEV6MlVLNjZQdWRicTV0RXZmQXlUU2xCQ2pTN3lrcDE0UU1hK0VYZWthQXJCL2NtQ1RrVVMvZXZWQVlBdzhRZzJqU0xkSEpFODEzRDVva3d4cnowOGUwOFg4VWVNRXJPTkZzcHZQTlY1VVpZdTJWU1VmK0FXKzlpeFZuTUFmS01ENEh4NEQwRjBrU05JY28wQzNiOGxMcmwyTlFWWWQ3aG8rVWEvQithakZ1L1d4WC9tL0hOc1g4SFhobg" alt="">
+        </section>
+        <section class="info">
+            <p class="tit">Informações do produto</p><br>
+            <p class="textinfo">Prepare-se para o extraordinário. O novo Apple Watch Series 10 redefine a inovação com sua tela Retina Sempre Ativa, agora 30% maior, oferecendo brilho espetacular e cores vibrantes.
+                Seu design premium, mais fino e com bordas curvas, é feito de alumínio reciclado ou titânio, garantindo leveza e durabilidade. Equipado com o novo chip S10, ele entrega desempenho até 20% mais rápido,
+                garantindo fluidez em todas as interações. Monitore sua saúde com o avançado sensor de temperatura corporal, ECG e medição de oxigênio no sangue. Conte com SOS de Emergência e Detecção de Acidente para
+                sua segurança. Com novos modos de treino e
+                bateria que dura até 36 horas no Modo de Pouca Energia, recarga rápida e conectividade celular, o Apple Watch Series 10 está pronto para acompanhar seu ritmo e te manter conectado, saudável e seguro.</p>
+        </section>
+        <form action="produtocomprado.html">
+            <div class="arm">
+            <p>Armazenamento:</p><br>
+            <button type="button">
+                8GB +R$0,00
+            </button>
+            <button type="button">
+                16GB +R$100,00
+            </button>
+            <button type="button">
+                32GB +R$200,00
+            </button>
+            </div>
+            <div class="ram">
+                <p>RAM:</p><br>
+                <button type="button">
+                4GB +R$0,00
+            </button>
+            <button type="button">
+                8GB +R$200,00
+            </button>
+            </div>
+            <button class="enviar" type="submit"> Comprar </button>
+        </form>
+    </main>
+    <footer>
+  <p>Copyright DAtech®</p>
+</footer>
+<script>
+    const button = document.querySelectorAll("button");
+    const comprar = document.querySelector('.enviar')
+
+
+    button.forEach(button => {
+        button.addEventListener('click', mudarcor)
+        function mudarcor(){
+            button.style.background = 'rgb(71, 157, 255)';
+        }
+    });
+    enviar.addEventListener('click', compre)
+    function compre(){
+        window.location.href = 'produtocomprado.html'
+    }
+</script>
+</body>
+</html>
+

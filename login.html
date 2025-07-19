@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Faça seu login!</title>
+  <style>
+     *{
+       margin: 0;
+       width: 100%;
+     }
+     header{
+       background: white;
+       box-shadow: 1px 1px 20px grey;
+       height: 30px;
+       text-align: center;
+       padding: 10px;
+       font-size: 20px;
+       letter-spacing: 30px;
+       font-weight: 900;
+     }
+     header p{
+       background: linear-gradient(to right, #008CFF,#09A6FC,#09DEFC);
+       background-clip: text;
+       -webkit-background-clip: text;
+       color: transparent;
+     }
+     body{
+       background: #F5F5F5;
+       height: 700px;
+       overflow: hidden;
+     }
+     main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+     }
+     .plano{
+       background: #FFFFFF;
+       border: solid black 2px;
+       width: 300px;
+       height: 300px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       border-radius: 40px;
+       position: relative;
+     }
+     .plano p{
+       text-shadow: 1px 1px 30px black;
+       font-family: courier;
+       font-size: 25px;
+       font-weight: 500;
+     }
+     .campos{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+     }
+     input{
+       width: 200px;
+       height: 25px;
+       border-radius: 10px;
+       border: solid 2px;
+       border-color: #0081FF, #379CFF, #6BB6FF, #A0D0FF;
+       font-family: courier;
+     }
+     button{
+       border: double grey 3px;
+       border-radius: 10px;
+       padding: 5px;
+       background: #A0D0FF;
+     }
+     footer{
+      position: relative;
+      bottom: 0;
+      background: white;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+     }
+     footer p{
+      background: linear-gradient(rgb(0, 89, 255), rgb(66, 170, 255));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+     }
+  </style>
+</head>
+<body>
+  <header>
+    <p>DAtech</p>
+  </header>
+  <main>
+  <div class="plano">
+    <p>Login</p>
+    <div class="login">
+      <form class="campos" action="" method="get">
+        <input type="text" class="user" placeholder="Usuário">
+        <input type="text" class="sen" placeholder="Senha"/>
+        <button type="submit">Logar</button>
+      </form>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>Copyright DAtech®</p>
+</footer>
+<script>
+
+
+  var button = document.querySelector("button");
+
+
+  button.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  var user = document.querySelector(".user").value;
+  var sen = document.querySelector(".sen").value;
+
+  if (user == "comprador" && sen == "1234"){
+    alert("acesso liberado");
+    window.location.href = "loja.html";
+  } else {
+    alert("usuário ou senha incorretos. Tente novamente.");
+  }
+});
+
+</script>
+</body>
+</html>
+
+
+
